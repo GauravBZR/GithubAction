@@ -20,7 +20,5 @@ jobs:
           apiKey: 546a14fb06d577568f48766e
           apiSecret: ${{env.apiSecret}}
           testID: ${{env.testID}}
-          uploadFileCheck: ${{env.uploadFileCheck}}
-          inputStartFile: ${{env.inputStartFile}}
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
