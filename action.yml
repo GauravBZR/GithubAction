@@ -5,6 +5,10 @@ env:
   testID: "14643428"
   continuePipeline: "false"
   showTailLog: "false"
+  totalUsers: "7" 
+	duration: "5" 
+	rampUp: "2"
+
   
 on: push
 jobs:
@@ -20,6 +24,9 @@ jobs:
           apiKey: ${{env.apiKey}}
           apiSecret: ${{env.apiSecret}}
           testID: ${{env.testID}}
+          totalUsers: ${{env.totalUsers}} 
+				  duration: ${{env.duration}} 
+			  	rampUp: ${{env.rampUp}}
           uploadFileCheck: ${{env.uploadFileCheck}}
           inputStartFile: ${{env.inputStartFile}}
           continuePipeline: ${{env.continuePipeline}}
