@@ -1,8 +1,8 @@
 name: github-action
 env:
-  apiKey: "546a14fb06d577568f48766e"
-  apiSecret: "8107c6e656aba24e3c69def32871b3dd71d332f2873de62e29256459ed385108ae5b3e49"
-  testID: "9366815"
+  apiKey: "1fa2bd892fe3da05236ef806"
+  apiSecret: "cf995a04c7bb53b15187d24ce15da14dfa23d6d2641ce6c1c32fc7b25c9b5791b56ba218"
+  testID: "14643428"
   continuePipeline: "false"
   showTailLog: "false"
   
@@ -17,7 +17,7 @@ jobs:
         uses: BlazeRunner-BZR/Github-Action@v8.1
         id: run-test
         with:
-          apiKey: 546a14fb06d577568f48766e
+          apiKey: ${{env.apiKey}}
           apiSecret: ${{env.apiSecret}}
           testID: ${{env.testID}}
           uploadFileCheck: ${{env.uploadFileCheck}}
