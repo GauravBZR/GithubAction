@@ -4,7 +4,7 @@ env:
   apiSecret: "cf995a04c7bb53b15187d24ce15da14dfa23d6d2641ce6c1c32fc7b25c9b5791b56ba218"
   testID: "14643428"
   continuePipeline: "false"
-  showTailLog: "false"
+  showTailLog: "true"
   totalUsers: "7" 
   duration: "5" 
   rampUp: "2"
