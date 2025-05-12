@@ -5,6 +5,10 @@ env:
   testID: "14643428"
   continuePipeline: "false"
   showTailLog: "false"
+  jmeterProperties:
+    description: 'jmeterproperties'
+    required: false
+    default: 'null'
   
 on: push
 jobs:
