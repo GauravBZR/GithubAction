@@ -4,7 +4,7 @@ env:
 	apiSecret: "cf995a04c7bb53b15187d24ce15da14dfa23d6d2641ce6c1c32fc7b25c9b5791b56ba218" 
 	createTest: "false" 
 	inputStartFile: "Blazedemo.jmx" 
-	testID: "14643428" 
+	testName: "BlazeDemo" 
 	projectID: "732590"
 	totalUsers: "33" 
 	duration: "5" 
@@ -19,14 +19,14 @@ on: push jobs:
 			-	name: Checkout
 			uses:  actions/checkout@v2.3.4
 			-	name: Run Blazemeter test
-			uses: BlazeRunner-BZR/Github-Action@v8.2
+			uses: BlazeRunner-BZR/Github-Action@v8.1
 			id: run-test
 			with:
 				apiKey: ${{env.apiKey}} 
 				apiSecret: ${{env.apiSecret}}
 				createTest: ${{env.createTest}}
 				inputStartFile: ${{env.inputStartFile}} 
-				testID: ${{env.testID}}
+				testName: ${{env.testName}}
 				projectID: ${{env.projectID}}  
 				totalUsers: ${{env.totalUsers}} 
 				duration: ${{env.duration}} 
