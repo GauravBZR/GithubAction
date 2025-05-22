@@ -5,9 +5,9 @@ env:
   apiSecret: "cf995a04c7bb53b15187d24ce15da14dfa23d6d2641ce6c1c32fc7b25c9b5791b56ba218"
   projectID: "732590"
   testID: "14643428"
-  totalUsers: "7"
+  totalusers: "7"
   duration: "5"
-  rampUp: "1"
+  rampup: "1"
   continuePipeline: "true"
   showTailLog: "false"
 
@@ -30,8 +30,8 @@ jobs:
           apiSecret: ${{ env.apiSecret }}
           testID: ${{ env.testID }}
           projectID: ${{ env.projectID }}
-          totalUsers: ${{ env.totalUsers }}
+          totalUsers: ${{ env.totalusers }}
           duration: ${{ env.duration }}
-          rampUp: ${{ env.rampUp }}
+          rampUp: ${{ env.rampup }}
           continuePipeline: ${{ env.continuePipeline }}
           showTailLog: ${{ env.showTailLog }}
