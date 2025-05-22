@@ -30,8 +30,8 @@ jobs:
           apiSecret: ${{ env.apiSecret }}
           testID: ${{ env.testID }}
           projectID: ${{ env.projectID }}
-          totalUsers: ${{ env.totalusers }}
+          totalusers: ${{ env.totalusers }}
           duration: ${{ env.duration }}
-          rampUp: ${{ env.rampup }}
+          rampup: ${{ env.rampup }}
           continuePipeline: ${{ env.continuePipeline }}
           showTailLog: ${{ env.showTailLog }}
