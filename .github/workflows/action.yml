@@ -1,7 +1,5 @@
 name: github-action
 env:
-  apiKey: ${{ secrets.APIKEY }}
-  apiSecret: ${{ secrets.APISECRET }}
   testID: "14630762"
   continuePipeline: "false"
   showTailLog: "false"
