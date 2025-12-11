@@ -17,7 +17,7 @@ jobs:
         uses: BlazeRunner-BZR/Github-Action@v8.1
         id: run-test
         with:
-          apiKey: 546a14fb06d577568f48766e
+          apiKey: ${{env.apiKey}}
           apiSecret: ${{env.apiSecret}}
           testID: ${{env.testID}}
           uploadFileCheck: ${{env.uploadFileCheck}}
