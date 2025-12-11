@@ -3,8 +3,8 @@ name: BlazeMeter GitHub Action
 env:
   apiKey: "1fa2bd892fe3da05236ef806"
   apiSecret: "cf995a04c7bb53b15187d24ce15da14dfa23d6d2641ce6c1c32fc7b25c9b5791b56ba218"
-  projectID: "732590"
-  testID: "14643428"
+  projectID: "921448"
+  testID: "14630762"
   totalUsers: "7"
   duration: "5"
   rampup: "1"
@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2.3.4
 
       - name: Run BlazeMeter Test
-        uses: BlazeRunner-BZR/Github-Action@v8.2
+        uses: BlazeRunner-BZR/Github-Action@v8.4
         id: run-test
         with:
           apiKey: ${{ env.apiKey }}
