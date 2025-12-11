@@ -15,8 +15,8 @@ jobs:
         uses: BlazeRunner-BZR/Github-Action@v8.4
         id: run-test
         with:
-          apiKey: ${{ secrets.APIKEY }}
-          apiSecret: ${{ secrets.APISECRET }}
+          apiKey: ${{ secrets.BLAZEMETER_API_KEY }}
+          apiSecret: ${{ secrets.BLAZEMETER_API_SECRET }}
           testID: ${{env.testID}}
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
