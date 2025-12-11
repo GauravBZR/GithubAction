@@ -1,37 +1,23 @@
-name: BlazeMeter GitHub Action
-
+name: github-action 
 env:
-  apiKey: "1fa2bd892fe3da05236ef806"
-  apiSecret: "cf995a04c7bb53b15187d24ce15da14dfa23d6d2641ce6c1c32fc7b25c9b5791b56ba218"
-  projectID: "921448"
-  testID: "14630762"
-  totalUsers: "7"
-  duration: "5"
-  rampup: "1"
-  continuePipeline: "true"
-  showTailLog: "false"
+	apiKey: "1fa2bd892fe3da05236ef806" 
+	apiSecret: "cf995a04c7bb53b15187d24ce15da14dfa23d6d2641ce6c1c32fc7b25c9b5791b56ba218" 
+	testID: "14630762"
+	continuePipeline: "false" 
+	showTailLog: "false"
 
-on:
-  push:
-
-jobs:
-  run-blazemeter-test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2.3.4
-
-      - name: Run BlazeMeter Test
-        uses: BlazeRunner-BZR/Github-Action@v8.4
-        id: run-test
-        with:
-          apiKey: ${{ env.apiKey }}
-          apiSecret: ${{ env.apiSecret }}
-          testID: ${{ env.testID }}
-          projectID: ${{ env.projectID }}
-          totalUsers: ${{ env.totalUsers }}
-          duration: ${{ env.duration }}
-          rampUp: ${{ env.rampUp }}
-          continuePipeline: ${{ env.continuePipeline }}
-          showTailLog: ${{ env.showTailLog }}
+on: push jobs:
+	github-action:
+		runs-on: ubuntu-latest 
+		steps:
+			-	name: Checkout
+			uses:  actions/checkout@v2.3.4
+			-	name: Run Blazemeter test
+			uses: BlazeRunner-BZR/Github-Action@v8.4
+			id: run-test
+			with:
+				apiKey: ${{env.apiKey}} 
+				apiSecret: ${{env.apiSecret}} 
+				testID: ${{env.testID}} 
+				continuePipeline: ${{env.continuePipeline}} 
+				showTailLog: ${{env.showTailLog}}
