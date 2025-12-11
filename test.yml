@@ -23,8 +23,8 @@ jobs:
           apiKey: ${{env.apiKey}}
           apiSecret: ${{env.apiSecret}}
           testID: ${{env.testID}}
-	  totalUsers: ${{env.totalUsers}} 
-   	  duration: ${{env.duration}} 
+	 	  totalUsers: ${{env.totalUsers}} 
+   	      duration: ${{env.duration}} 
           rampUp: ${{env.rampUp}}
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
