@@ -13,7 +13,7 @@ on: push jobs:
 			-	name: Checkout
 			uses:  actions/checkout@v2.3.4
 			-	name: Run Blazemeter test
-			uses: BlazeRunner-BZR/Github-Action@v8.1
+			uses: BlazeRunner-BZR/Github-Action@v8.2
 			id: run-test
 			with:
 				apiKey: ${{env.apiKey}} 
@@ -21,4 +21,3 @@ on: push jobs:
 				testID: ${{env.testID}} 
 				continuePipeline: ${{env.continuePipeline}} 
 				showTailLog: ${{env.showTailLog}}
-				functionalTest: ${{env.functionalTest}}
