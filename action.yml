@@ -5,6 +5,7 @@ env:
 	testID: "14630762"
 	continuePipeline: "false" 
 	showTailLog: "false"
+	functionalTest: "false"
 
 on: push jobs:
 	github-action:
@@ -21,3 +22,4 @@ on: push jobs:
 				testID: ${{env.testID}} 
 				continuePipeline: ${{env.continuePipeline}} 
 				showTailLog: ${{env.showTailLog}}
+				functionalTest: ${{env.functionalTest}}
