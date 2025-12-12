@@ -3,6 +3,7 @@ env:
   testID: "15277997"
   continuePipeline: "false"
   showTailLog: "false"
+  webhookURL: "https://perforce.slack.com/archives/D02TJUS4Z34"
   
 on: push
 jobs:
@@ -20,3 +21,5 @@ jobs:
           testID: ${{env.testID}}
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
+          webhookURL: ${{env.webhookURL}}
+
