@@ -3,7 +3,7 @@ env:
   testID: "15277997"
   continuePipeline: "false"
   showTailLog: "false"
-  webhookURL: "bzr-cs-team-internal (Slack)" <bzr-cs-team-internal-aaaajqbezdzkffd2sjbteocbym@perforce.slack.com>"
+  webhookURL: "bzr-cs-team-internal-aaaajqbezdzkffd2sjbteocbym@perforce.slack.com>"
   
 on: push
 jobs:
