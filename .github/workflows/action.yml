@@ -1,9 +1,10 @@
 name: github-action
 env:
-  testID: "15277997"
+  testID: "10432656"
   continuePipeline: "false"
   showTailLog: "false"
   webhookURL: "bzr-cs-team-internal-aaaajqbezdzkffd2sjbteocbym@perforce.slack.com"
+  multiTests : "true"
   
 on: push
 jobs:
@@ -13,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: Run Blazemeter test
-        uses: BlazeRunner-BZR/Github-Action@v8.4
+        uses: BlazeRunner-BZR/Github-Action@v8.8
         id: run-test
         with:
           apiKey: ${{ secrets.BLAZEMETER_API_KEY }}
