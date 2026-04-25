@@ -1,10 +1,11 @@
 name: github-action
 env:
-  testID: "13420192"
+  testID: "10432656"
   continuePipeline: "false"
   showTailLog: "false"
   webhookURL: "bzr-cs-team-internal-aaaajqbezdzkffd2sjbteocbym@perforce.slack.com"
-  
+  multiTests: "true"
+
 on: push
 jobs:
   github-action:
