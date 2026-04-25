@@ -4,6 +4,7 @@ env:
   continuePipeline: "false"
   showTailLog: "false"
   webhookURL: "bzr-cs-team-internal-aaaajqbezdzkffd2sjbteocbym@perforce.slack.com"
+  multiTests: "true"
 
 on: push
 jobs:
@@ -22,6 +23,6 @@ jobs:
           continuePipeline: ${{env.continuePipeline}}
           showTailLog: ${{env.showTailLog}}
           webhookURL: ${{env.webhookURL}}
-          multiTests: "true"
+          multiTests: ${{env.multiTests}}
 
 
